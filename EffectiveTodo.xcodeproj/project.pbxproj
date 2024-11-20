@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC015D142CEE770500B2F185 /* EffectiveTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC015D132CEE770500B2F185 /* EffectiveTodoTests.swift */; };
+		FC015D212CEE786300B2F185 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC015D202CEE786300B2F185 /* CoreDataServiceTests.swift */; };
+		FC015D232CEE78A400B2F185 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC015D222CEE78A400B2F185 /* NetworkServiceTests.swift */; };
+		FC015D252CEE78DA00B2F185 /* TodoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC015D242CEE78DA00B2F185 /* TodoViewModelTests.swift */; };
 		FC9529672CEE60A400F8C155 /* EffectiveTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9529662CEE60A400F8C155 /* EffectiveTodoApp.swift */; };
 		FC95296B2CEE60A700F8C155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC95296A2CEE60A700F8C155 /* Assets.xcassets */; };
 		FC95296E2CEE60A700F8C155 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC95296D2CEE60A700F8C155 /* Preview Assets.xcassets */; };
@@ -23,7 +27,22 @@
 		FC9529B32CEE639000F8C155 /* TodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC9529B12CEE639000F8C155 /* TodoModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FC015D152CEE770500B2F185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC95295B2CEE60A400F8C155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC9529622CEE60A400F8C155;
+			remoteInfo = EffectiveTodo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FC015D112CEE770500B2F185 /* EffectiveTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffectiveTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC015D132CEE770500B2F185 /* EffectiveTodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveTodoTests.swift; sourceTree = "<group>"; };
+		FC015D202CEE786300B2F185 /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceTests.swift; sourceTree = "<group>"; };
+		FC015D222CEE78A400B2F185 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		FC015D242CEE78DA00B2F185 /* TodoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModelTests.swift; sourceTree = "<group>"; };
 		FC9529632CEE60A400F8C155 /* EffectiveTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectiveTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9529662CEE60A400F8C155 /* EffectiveTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveTodoApp.swift; sourceTree = "<group>"; };
 		FC95296A2CEE60A700F8C155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FC015D0E2CEE770500B2F185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC9529602CEE60A400F8C155 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,10 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC015D122CEE770500B2F185 /* EffectiveTodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC015D132CEE770500B2F185 /* EffectiveTodoTests.swift */,
+				FC015D202CEE786300B2F185 /* CoreDataServiceTests.swift */,
+				FC015D222CEE78A400B2F185 /* NetworkServiceTests.swift */,
+				FC015D242CEE78DA00B2F185 /* TodoViewModelTests.swift */,
+			);
+			path = EffectiveTodoTests;
+			sourceTree = "<group>";
+		};
 		FC95295A2CEE60A400F8C155 = {
 			isa = PBXGroup;
 			children = (
 				FC9529652CEE60A400F8C155 /* EffectiveTodo */,
+				FC015D122CEE770500B2F185 /* EffectiveTodoTests */,
 				FC9529642CEE60A400F8C155 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FC9529632CEE60A400F8C155 /* EffectiveTodo.app */,
+				FC015D112CEE770500B2F185 /* EffectiveTodoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +195,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FC015D102CEE770500B2F185 /* EffectiveTodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC015D192CEE770500B2F185 /* Build configuration list for PBXNativeTarget "EffectiveTodoTests" */;
+			buildPhases = (
+				FC015D0D2CEE770500B2F185 /* Sources */,
+				FC015D0E2CEE770500B2F185 /* Frameworks */,
+				FC015D0F2CEE770500B2F185 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC015D162CEE770500B2F185 /* PBXTargetDependency */,
+			);
+			name = EffectiveTodoTests;
+			productName = EffectiveTodoTests;
+			productReference = FC015D112CEE770500B2F185 /* EffectiveTodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FC9529622CEE60A400F8C155 /* EffectiveTodo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC9529872CEE60A700F8C155 /* Build configuration list for PBXNativeTarget "EffectiveTodo" */;
@@ -183,6 +240,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					FC015D102CEE770500B2F185 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FC9529622CEE60A400F8C155;
+					};
 					FC9529622CEE60A400F8C155 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -202,11 +263,19 @@
 			projectRoot = "";
 			targets = (
 				FC9529622CEE60A400F8C155 /* EffectiveTodo */,
+				FC015D102CEE770500B2F185 /* EffectiveTodoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FC015D0F2CEE770500B2F185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC9529612CEE60A400F8C155 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +288,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FC015D0D2CEE770500B2F185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC015D252CEE78DA00B2F185 /* TodoViewModelTests.swift in Sources */,
+				FC015D212CEE786300B2F185 /* CoreDataServiceTests.swift in Sources */,
+				FC015D232CEE78A400B2F185 /* NetworkServiceTests.swift in Sources */,
+				FC015D142CEE770500B2F185 /* EffectiveTodoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC95295F2CEE60A400F8C155 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,7 +320,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FC015D162CEE770500B2F185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC9529622CEE60A400F8C155 /* EffectiveTodo */;
+			targetProxy = FC015D152CEE770500B2F185 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		FC015D172CEE770500B2F185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTY44DYVYJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blessthedevil.EffectiveTodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EffectiveTodo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EffectiveTodo";
+			};
+			name = Debug;
+		};
+		FC015D182CEE770500B2F185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CTY44DYVYJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blessthedevil.EffectiveTodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EffectiveTodo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EffectiveTodo";
+			};
+			name = Release;
+		};
 		FC9529852CEE60A700F8C155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -433,6 +557,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FC015D192CEE770500B2F185 /* Build configuration list for PBXNativeTarget "EffectiveTodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC015D172CEE770500B2F185 /* Debug */,
+				FC015D182CEE770500B2F185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FC95295E2CEE60A400F8C155 /* Build configuration list for PBXProject "EffectiveTodo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
